@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.first-div {
+  margin: 0 auto;
+}
+
+.todo-list {
+  border: 1px solid black;
+  list-style: none;
+  padding: 0;
+  width: 20%;
+}
+
+.todo-list > li {
+  padding-left: 30px;
+}
+
+.todo-list > li:not(:last-of-type) {
+  border-bottom: 1px solid black;
+  margin: 0;
+}
