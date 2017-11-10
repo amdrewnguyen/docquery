@@ -5,27 +5,41 @@
     <script src="./lib/docquery.js"></script>
     <script src="./js/demo.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/demo.css">
     <title>Docquery Demo</title>
   </head>
   <body>
+  <h1>Docquery Widgets</h1>
+    <div class="widgets">
+      
+      <div class="first-div">
+        <h2>Todo List</h2>
+        <div class="todo-list-div">
+          <ul class ='todo-list'>
+          </ul>
+          <div class="add-todo">
+            <input type="text" class="new-todo">
+            <button type="button" class="first-button">Add Todo</button>
+          </div>
+        </div>
+      </div>
 
-  <div class="first-div">
-    <h2>Todo List</h2>
-    <ul class ='todo-list'>
-      <li>words</li>
-      <li>more qoew</li>
-      <li>3rd</li>
-      <li>4th</li>
-    </ul>
-    <input type="text" class="new-todo">
-    <button type="button" class="first-button">Add Todo</button>
-  </div>
+      <div class="second-div">
+        <h2>Weather Widget</h2>
+        <div class="weather-div">
+          <div class="place-date">
+            <h2>New York, NY</h2>
+            <span class="date"></span>
+          </div>
+          <div class="weather-info">
+            <span class="temperature"></span>
+            <span class="desc"></span>
+          </div>
+        </div>
+      </div>
 
-  <div class="weather-div">
-    <h2>Temperature in NY</h2>
-    <span class="temperature"></span>
-  </div>
-
+    </div>
   </body>
 </html>
