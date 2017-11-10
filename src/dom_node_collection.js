@@ -1,6 +1,6 @@
 class DOMNodeCollection {
-  constructor(arr) {
-    this.elements = arr;
+  constructor(elements) {
+    this.elements = elements;
     this.listeners = {};
   }
 

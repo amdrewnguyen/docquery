@@ -7,6 +7,8 @@ EssLine is a DOM JavaScript DOM interaction library. EssLine provides an API tha
   * Build DOM elements from HTML strings
   * Make HTTP requests that return `Promise` objects
 
+Check out the demo [here](https://amdrewnguyen.gitpages.io/essline-demo)!
+
 ## Getting Started
 
 To get started using EssLine, simply include `essline.js` in your source code.
@@ -46,23 +48,55 @@ To compile from source, simply use the included configuration file to run [webpa
 
 #### `_$` function
 
+When passed an HTML element or string containing HTML, returns a [DOMNodeCollection](#domnodecollection-object) object based on argument passed.
+
+When passed a selector string, returns matching DOM Elements from the document.
+
+When passed a function, sets the argument as a callback to be invoked on `DOMContentLoaded` event.
+
 #### `ajax`
+
+`_$.ajax(options)`
+
+Creates an HTTP request with given options and returns a `Promise` object.
 
 ### `DOMNodeCollection` Object
 
 #### `constructor`
 
+`constructor(elements)`
+
+Takes an array of HTML Elements and returns a `DOMNodeCollection` object.
+
 #### DOM Selection
 
 ##### `find`
 
+`find(arg)`
+
+Takes a selector string and returns all matching elements as a `DOMNOdeCollection` object.
+
 ##### `parent`
 
+`parent()`
+
+Returns parents of all elements as a `DOMNodeCollection` object.
+
 ##### `children`
+
+`children()`
+
+Returns children of all elements as a `DOMNodeCollection` object.
 
 #### DOM Manipulation
 
 ##### `html`
+
+`html([arg])`
+
+If passed an argument, sets inner HTML of all elements to argument.
+
+If called without an argument, returns the inner HTML of the first element.
 
 ##### `append`
 
