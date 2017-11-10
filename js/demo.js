@@ -38,7 +38,7 @@ _$(() => {
     }
   });
 
-  // getWeather();
+  getWeather();
 });
 
 
