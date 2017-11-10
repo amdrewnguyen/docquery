@@ -7,7 +7,7 @@ EssLine is a DOM JavaScript DOM interaction library. EssLine provides an API tha
   * Build DOM elements from HTML strings
   * Make HTTP requests that return `Promise` objects
 
-Check out the demo [here](https://amdrewnguyen.gitpages.io/essline-demo)!
+Check out the demo [here](https://amdrewnguyen.github.io/essline-demo)!
 
 ## Getting Started
 
