@@ -1,7 +1,7 @@
-$(() => {
-  const newTodoInput = $('.new-todo');
-  const addTodoButton = $('button');
-  const todoList = $('.todo-list');
+_$(() => {
+  const newTodoInput = _$('.new-todo');
+  const addTodoButton = _$('button');
+  const todoList = _$('.todo-list');
 
   const myStorage = window.localStorage;
 
@@ -33,7 +33,7 @@ $(() => {
     if (e.target.classList.contains("remove-btn")) {
       // console.log("delete clicked");
       e.currentTarget.removeChild(e.target.parentNode);
-      let newTodos = $(".todo-text");
+      let newTodos = _$(".todo-text");
       myStorage.setItem("todoItems", JSON.stringify(newTodos.text()));
     }
   });
@@ -43,11 +43,11 @@ $(() => {
 
 
 const newTodoLi = (text) => {
-  const todoItem = $("<li>");
-  const textSpan = $("<span>");
+  const todoItem = _$("<li>");
+  const textSpan = _$("<span>");
   textSpan.addClass("todo-text");
   textSpan.html(text);
-  const removeButton = $("<button>");
+  const removeButton = _$("<button>");
   removeButton.addClass("remove-btn");
   removeButton.text("X");
   todoItem.append(removeButton);
@@ -62,7 +62,7 @@ const saveNewTodo = (store, newTodo, todos) => {
 };
 
 const getWeather = () => {
-  return $.ajax(
+  return _$.ajax(
     {
       type: 'GET',
       url: "http://api.openweathermap.org/data/2.5/weather?q=NewYork,NY&appid=bcb83c4b54aee8418983c2aff3073b3b",
@@ -70,10 +70,10 @@ const getWeather = () => {
         console.log("We have your weather!");
         console.log(data);
         let d = new Date();
-        $(".date").append(formatDateString(d.toDateString()));
-        $(".desc").append(data.weather[0].main);
+        _$(".date").append(formatDateString(d.toDateString()));
+        _$(".desc").append(data.weather[0].main);
         const temp = Math.floor((data.main.temp - 273.15) * 9 / 5 + 32);
-        $(".temperature").append(temp + "°F");
+        _$(".temperature").append(temp + "°F");
 
       },
       error() {
@@ -85,7 +85,7 @@ const getWeather = () => {
 
 const formatDateString = (s) => {
   let words = s.split(" ");
-  return `${words[0]}, ${words[1]} ${words[2]}`;
+  return `_${words[0]}, _${words[1]} _${words[2]}`;
 };
 
 window.getWeather = getWeather;
