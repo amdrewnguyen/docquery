@@ -10,6 +10,7 @@ body {
 }
 
 .widgets {
+  /*min-width: 700px;*/
   width: 61.8%;
   margin-top: 60px;
   /*background-color: rgba(0,0,0,0.2);*/
@@ -19,6 +20,20 @@ body {
   justify-content: space-around;
   border-radius: 5px;
   box-shadow: -5px -5px 10px rgba(0,0,0,0.5);
+}
+
+.links-div {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.links-div > a > svg {
+  fill: black;
+}
+
+.links-div > a:hover > svg {
+  fill: #0099ff;
 }
 
 .widgets > div {
