@@ -2,8 +2,8 @@
 var path = require('path');
 
 module.exports = {
-  entry: "./lib/main.js",
+  entry: "./main.js",
   output: {
-      filename: "./lib/essline.js"
+      filename: "../dist/essline.js"
   }
 };
