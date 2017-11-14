@@ -100,24 +100,68 @@ If called without an argument, returns the inner HTML of the first element.
 
 ##### `append`
 
+`append(arg)`
+
+Appends an `HTMLElement` or `DOMNOdeCollection` object to list of children elements.
+
 ##### `empty`
+
+`empty()`
+
+Clears all child nodes.
 
 ##### `remove`
 
+`remove()`
+
+Clears all child nodes, and removes child elements.
+
 ##### `val`
+
+`val([value])`
+
+If present, sets the value of all elements to value argument. Otherwise, returns value of first child element.
 
 ##### `addClass`
 
+`addClass(arg)`
+
+Accepts a space delimited list of classes, and adds them to all elements' class lists.
+
 ##### `removeClass`
+
+`removeClass(arg)`
+
+Accepts a space delimited list of classes, and removes them from all elements' class lists.
 
 ##### `toggleClass`
 
+`toggleClass(arg)`
+
+Accepts a space delimited list of classes, and toggles them in all elements' class lists.
+
 ##### `attr`
 
+`attr(atr, [val])`
+
+If val argument present, sets named attribute of all elements to value. Otherwise, returns the first element's value of named attribute.
+
 ##### `text`
+
+`text([val])`
+
+If val argument present, sets text of all elements to value. Otherwise, returns the first element's text value.
 
 #### Event Listeners
 
 ##### `on`
 
+`on(listener, callback)`
+
+Adds callback as an event handler for listener action on all elements.
+
 ##### `off`
+
+`off(listener, callback)`
+
+Removes callback as an event handler for listener action on all elements.

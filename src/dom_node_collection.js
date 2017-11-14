@@ -23,7 +23,6 @@ class DOMNodeCollection {
   append(arg) {
     const toAppend = [];
     if (arg instanceof DOMNodeCollection ) {
-      // debugger
       arg.elements.forEach((el) => {
         toAppend.push(el.outerHTML);
       });
