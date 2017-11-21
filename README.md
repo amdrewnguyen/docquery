@@ -1,6 +1,6 @@
 # EssLine
 
-EssLine is a DOM JavaScript DOM interaction library. EssLine provides an API that can:
+EssLine is a JavaScript DOM interaction library. EssLine provides an API that can:
   * Select DOM element(s)
   * Manipulate DOM element(s)
   * Create `DOMNodeCollection` objects from `HTMLElement` objects
